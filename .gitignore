@@ -1,0 +1,4 @@
+.idea/
+venv/
+models/model_detector.pth
+models/model_predictor.pth

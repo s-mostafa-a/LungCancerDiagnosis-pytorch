@@ -7,7 +7,7 @@ import torch.utils.data as data_utils
 import numpy as np
 import os
 
-from model_nod3 import Net
+from ..models.model_nod3 import Net
 
 def run(slid_dir):
     parser = argparse.ArgumentParser(description='PyTorch MNIST Example')

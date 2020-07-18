@@ -10,14 +10,14 @@ from sklearn.metrics import roc_auc_score
 import pandas as pd
 import argparse
 
-os.environ["CUDA_VISIBLE_DEVICES"] = '2'
-sys.path.insert(0, './utils')
-sys.path.insert(0, './models')
+from utils import nodule_detector
 
-import data_utils as du
-import test_utils as tu
-import nodule_detector
-from model_l5 import Net
+os.environ["CUDA_VISIBLE_DEVICES"] = '2'
+
+import utils.data_utils as du
+import utils.test_utils as tu
+import utils.nodule_detector
+from models.model_l5 import Net
 
 """
 This script runs test over our validation set, which corresponds to the year 2.000 CT scan 

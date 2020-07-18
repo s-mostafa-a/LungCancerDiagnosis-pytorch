@@ -6,7 +6,7 @@ import os
 import argparse
 from joblib import Parallel, delayed
 import scipy.misc
-import misc_utils as gp
+import utils.misc_utils as gp
 from scipy import ndimage
 
 def create_test_dataset(data_dir, AUG):
